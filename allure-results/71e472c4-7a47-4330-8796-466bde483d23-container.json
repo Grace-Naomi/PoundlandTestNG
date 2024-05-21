@@ -1,0 +1,1 @@
+{"uuid":"71e472c4-7a47-4330-8796-466bde483d23","name":"com.pl.WebTests.WishlistTest","children":["6241d605-52b7-4a8a-96d6-44308436f77c"],"befores":[{"name":"initializeBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1716024809784,"stop":1716024813607}],"afters":[],"start":1716024809719,"stop":1716024825409}

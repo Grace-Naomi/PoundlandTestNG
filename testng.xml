@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/SIP/PoundLand/src/test/java/com/pl/WebTests">
+
+        <parameter name="browserType" value="chrome"></parameter>
+
+        <parameter name="url" value="https://www.poundland.co.uk/"></parameter>
+
+        <parameter name="firstname" value="Test"></parameter>
+        <parameter name="lastname" value="QA"></parameter>
+        <parameter name="email" value="waqt@yopmail.com"></parameter>
+        <parameter name="password" value="Qatester1177"></parameter>
+        <parameter name="confirmPassword" value="Qatester1177"></parameter>
+        <classes>
+            <class name="com.pl.WebTests.AddToCartTest">
+                <methods>
+                    <include name="signIn"/>
+                    <include name="allProductsGardenPage"/>
+                    <include name="subItem"/>
+                    <include name="basketCartPage"/>
+                    <include name="verifyTotalNumberOfSeedsProductsInCart"/>
+                    <include name="logOut"/>
+                </methods>
+            </class>
+            <class name="com.pl.WebTests.WishlistTest">
+                <methods>
+                    <include name="createdAccountData"/>
+                    <include name="allProductsGardenPage"/>
+                    <include name="subItem"/>
+                    <include name="verifyTotalNumberOfGardeToolsProducts"/>
+                    <include name="verifyTotalNumberOfSeedsProductsInCart"/>
+                    <include name="logOut"/>
+                    <include name="myAccountMethod"/>
+                    <include name="myFavouritesMethod"/>
+                    <include name="verifyWishlistAddedItems"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
